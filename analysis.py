@@ -1,4 +1,7 @@
+# -*- coding: UTF-8 -*- 
 import os
+import io
+import shutil
 import json
 import jieba
 import matplotlib.pyplot as plt
@@ -6,7 +9,7 @@ from wordcloud import WordCloud
 
 
 # 将所有文件夹名转换为str类型
-folder_name = " ".join(os.listdir(r"E:\Pic\mzitu"))
+folder_name = " ".join(os.listdir(r"E:\mzitu"))
 
 # jieba分词
 jieba.load_userdict(r".\data\jieba.txt")

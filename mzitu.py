@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*- 
 import re
 import os
 import time
@@ -5,6 +6,8 @@ import threading
 from multiprocessing import Pool, cpu_count
 import requests
 from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 headers = {'X-Requested-With': 'XMLHttpRequest',
            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) '
